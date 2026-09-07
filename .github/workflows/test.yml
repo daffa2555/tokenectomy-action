@@ -1,0 +1,54 @@
+name: Self-Test Action
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Dummy Failure Log
+        shell: bash
+        run: |
+          cat << 'LOG' > test-raw.log
+          Error: Connection refused
+              at Object.connect (/home/app/node_modules/pg/lib/connection.js:45:11)
+              at /home/app/node_modules/pg-pool/index.js:120:9
+              at src/db/client.ts:25:7
+          Database connection failed with postgresql://admin:supersecretpassword123@db.prod.internal:5432/main
+          AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+          LOG
+
+      - name: Run Tokenectomy Razor Action
+        uses: ./
+        with:
+          log-file: 'test-raw.log'
+          output-file: 'test-sanitized.log'
+
+      - name: Verify Sanitized Output
+        shell: bash
+        run: |
+          echo "=== SANITIZED OUTPUT ==="
+          cat test-sanitized.log
+          
+          if grep -q "supersecretpassword123" test-sanitized.log; then
+            echo "FAILED: Database password was not redacted!"
+            exit 1
+          fi
+          if grep -q "wJalrXUtnFEMI" test-sanitized.log; then
+            echo "FAILED: AWS secret was not redacted!"
+            exit 1
+          fi
+          if grep -q "node_modules" test-sanitized.log; then
+            echo "FAILED: node_modules frame was not pruned!"
+            exit 1
+          fi
+
+          echo "SUCCESS: Action verified on runner!"
