@@ -1,6 +1,6 @@
 # Tokenectomy Razor Action 🗡️
 
-[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Tokenectomy%20Razor%20Action-blue.svg?logo=github&style=flat)](https://github.com/marketplace/actions/tokenectomy-razor-action)
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Tokenectomy%20Razor-blue.svg?logo=github&style=flat)](https://github.com/marketplace/actions/tokenectomy-razor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Official MCP Registry](https://img.shields.io/badge/Official%20MCP%20Registry-Active-brightgreen)](https://registry.modelcontextprotocol.io/)
 [![Main Repo](https://img.shields.io/badge/GitHub-daffa2555%2FTokenectomy-blue?logo=github)](https://github.com/daffa2555/Tokenectomy)
