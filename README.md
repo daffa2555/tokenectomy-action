@@ -3,8 +3,9 @@
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Tokenectomy%20Razor-blue.svg?logo=github&style=flat)](https://github.com/marketplace/actions/tokenectomy-razor)
 [![CI](https://github.com/daffa2555/tokenectomy-action/actions/workflows/test.yml/badge.svg)](https://github.com/daffa2555/tokenectomy-action/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Official MCP Registry](https://img.shields.io/badge/Official%20MCP%20Registry-Active-brightgreen)](https://registry.modelcontextprotocol.io/)
-[![Main Repo](https://img.shields.io/badge/GitHub-daffa2555%2FTokenectomy-blue?logo=github)](https://github.com/Tokenectomy-Labs/Tokenectomy)
+[![Official MCP Registry](https://img.shields.io/badge/Official%20MCP%20Registry-io.github.Tokenectomy--Labs%2Frazor-brightgreen)](https://registry.modelcontextprotocol.io/)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/tokenectomy-labs/tokenectomy)
+[![Main Repo](https://img.shields.io/badge/GitHub-Tokenectomy--Labs%2FTokenectomy-blue?logo=github)](https://github.com/Tokenectomy-Labs/Tokenectomy)
 
 **Tokenectomy Razor Action** is a high-performance GitHub Action that surgically scrubs internal framework stack frames and redacts sensitive credentials from build/test failure logs in sub-milliseconds—preventing secret leaks and slashing 90%+ of token bloat before logs reach AI triage bots or workflow artifacts.
 
@@ -87,7 +88,7 @@ jobs:
 ## 🔗 Ecosystem Links
 
 - **Core Engine (Rust Crate & MCP Server)**: [Tokenectomy-Labs/Tokenectomy](https://github.com/Tokenectomy-Labs/Tokenectomy)
-- **Official MCP Registry Listing**: [`io.github.daffa2555/razor`](https://registry.modelcontextprotocol.io/)
+- **Official MCP Registry Listing**: [`io.github.Tokenectomy-Labs/razor`](https://registry.modelcontextprotocol.io/)
 - **Crates.io**: [crates.io/crates/tokenectomy](https://crates.io/crates/tokenectomy)
 - **Autonomous Git Bridge**: [tokenectomy-git](https://github.com/daffa2555/tokenectomy-git)
 
