@@ -52,10 +52,10 @@ jobs:
   - **Node.js / TypeScript**: `node_modules/`, `.next/`, `dist/`
   - **Python**: `site-packages/`, `dist-packages/`, `venv/`
   - **Rust**: `.cargo/registry/`, `.rustup/`, `target/debug/build/`
-  - **Golang**: `go/src/` (stdlib), `go/pkg/mod/`, `vendor/`
-  - **Java / Kotlin**: `.m2/repository/`, `.gradle/caches/`, `org.springframework`
+  - **Golang**: `go/src/` (stdlib), `go/pkg/mod/`, `vendor/`, idle goroutine dump compression
+  - **Java / Kotlin**: `.m2/repository/`, `.gradle/caches/`, Spring Boot 3, Tomcat, Hibernate, Netty
   - **PHP**: `vendor/composer/`, `vendor/symfony/`, `vendor/laravel/`
-  - **C / C++**: `/usr/include/`, `/usr/lib/`, `vcpkg_installed/`
+  - **C / C++**: AddressSanitizer (ASan), glibc wrappers, `/usr/include/`, `/usr/lib/`, `vcpkg_installed/`
 - **🛡️ ReDoS-Safe Secret Redaction**: Strips database connection strings (`postgresql://`, `mysql://`, `mongodb://`), AWS keys (`AKIA...`), GitHub personal access tokens (`ghp_...`), Bearer tokens, and JWTs in $O(N)$ linear time.
 - **⚡ Sub-Millisecond Speed**: Runs on verified native pre-compiled Rust binaries without requiring compilation on the CI runner.
 - **🖥️ Cross-Platform**: Supports Linux (`ubuntu-latest`), macOS (`macos-latest` / Apple Silicon & Intel), and Windows (`windows-latest`).
