@@ -18,7 +18,7 @@ inputs:
   version:
     description: 'Release version of Tokenectomy Razor binary'
     required: false
-    default: 'v1.1.2'
+    default: 'v1.1.5'
 
 outputs:
   sanitized-file:
@@ -65,7 +65,7 @@ runs:
 
         if [ ! -f "$BIN_PATH" ]; then
           echo "Downloading Tokenectomy Razor ($VERSION) for $PLATFORM..."
-          URL="https://github.com/daffa2555/Tokenectomy/releases/download/${VERSION}/razor-${PLATFORM}"
+          URL="https://github.com/Tokenectomy-Labs/Tokenectomy/releases/download/${VERSION}/razor-${PLATFORM}"
           curl -fsSL -o "$BIN_PATH" "$URL"
           chmod +x "$BIN_PATH"
         fi

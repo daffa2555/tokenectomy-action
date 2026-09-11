@@ -4,7 +4,7 @@
 [![CI](https://github.com/daffa2555/tokenectomy-action/actions/workflows/test.yml/badge.svg)](https://github.com/daffa2555/tokenectomy-action/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Official MCP Registry](https://img.shields.io/badge/Official%20MCP%20Registry-Active-brightgreen)](https://registry.modelcontextprotocol.io/)
-[![Main Repo](https://img.shields.io/badge/GitHub-daffa2555%2FTokenectomy-blue?logo=github)](https://github.com/daffa2555/Tokenectomy)
+[![Main Repo](https://img.shields.io/badge/GitHub-daffa2555%2FTokenectomy-blue?logo=github)](https://github.com/Tokenectomy-Labs/Tokenectomy)
 
 **Tokenectomy Razor Action** is a high-performance GitHub Action that surgically scrubs internal framework stack frames and redacts sensitive credentials from build/test failure logs in sub-milliseconds—preventing secret leaks and slashing 90%+ of token bloat before logs reach AI triage bots or workflow artifacts.
 
@@ -86,7 +86,7 @@ jobs:
 
 ## 🔗 Ecosystem Links
 
-- **Core Engine (Rust Crate & MCP Server)**: [daffa2555/Tokenectomy](https://github.com/daffa2555/Tokenectomy)
+- **Core Engine (Rust Crate & MCP Server)**: [Tokenectomy-Labs/Tokenectomy](https://github.com/Tokenectomy-Labs/Tokenectomy)
 - **Official MCP Registry Listing**: [`io.github.daffa2555/razor`](https://registry.modelcontextprotocol.io/)
 - **Crates.io**: [crates.io/crates/tokenectomy](https://crates.io/crates/tokenectomy)
 - **Autonomous Git Bridge**: [tokenectomy-git](https://github.com/daffa2555/tokenectomy-git)
